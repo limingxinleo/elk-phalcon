@@ -28,3 +28,17 @@
 - [kafka](https://github.com/Aquarmini/kafka-demo-phalcon)
 - [机器学习](https://github.com/Aquarmini/ml-demo-phalcon)
 - [正则匹配](https://github.com/Aquarmini/regex-demo-phalcon)
+
+### 安装ELK
+~~~
+git clone https://github.com/deviantony/docker-elk.git
+cd docker-elk
+docker-compose build
+docker-compose up -d
+~~~
+
+### 访问ELK
+浏览器打开 http://localhost:5601
+
+
+
