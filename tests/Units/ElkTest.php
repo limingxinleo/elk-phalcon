@@ -50,7 +50,7 @@ class ElkTest extends UnitTestCase
     {
         $id = uniqid();
         ElkAsyncReporter::getInstance()->log('debug', 'id:{id}, I am {name}', ['name' => 'limx', 'id' => $id]);
-        sleep(2);
+        sleep(5);
 
         $res = $this->getElasticSearchInfoById($id);
         $this->assertEquals(1, $res['total']);
@@ -63,7 +63,7 @@ class ElkTest extends UnitTestCase
             'name' => 'limx',
             'age' => 28
         ])]);
-        sleep(2);
+        sleep(5);
 
         $res = $this->getElasticSearchInfoById($id);
         $this->assertEquals(1, $res['total']);
